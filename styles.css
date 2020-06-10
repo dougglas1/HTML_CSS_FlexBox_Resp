@@ -1,0 +1,72 @@
+/* PADRÃO */
+
+body, ul, li, p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+/* MONTAGEM DO CABEÇALHO (LOGO E NAV) */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,165,238,1) 0%, rgba(139,164,208,1) 46%, rgba(0,212,255,1) 71%);
+  display: flex; /* Coloca LOGO e NAV um ao lado do outro*/
+  flex-wrap: wrap; /* Quando a tela fica bem pequena joga o conteúdo da NAV abaixo da LOGO (quebra) */
+  justify-content: space-between; /* Espaço no meio entre ambos */
+  align-items: center; /* Alinhar os conteúdos ao Centro entre elas (NÃO É DA PÁGINA) */
+  padding: 20px; /* Distanciar das bordas da tela */
+}
+
+.header img {
+  width: 200px;
+  height: 50px;
+}
+
+.menu {
+  display: flex; /* Colocar o Conteúdo da NAV um ao lado do outro */
+}
+
+.menu li {
+  margin-left: 10px; /* Distanciar os conteúdos da NAV um do outro */
+}
+
+.menu li a {
+  display: block;
+  padding: 10px; /* Aumenta a área do conteúdo */
+  border-radius: 10px;
+  background: #0f3d6f;
+}
+
+/* FLEXBOX */
+
+.flex {
+  display: flex; /* Imagem um ao lado do outro */
+  flex-wrap: wrap; /* Quebra de linha */
+  max-width: 800px; /* Máximo 800 */
+  margin: 0 auto; /* Caso passe do 800 alinha ao centro da página */
+}
+
+/* Para as divs dentro do flex */
+.flex > div {
+  flex: 1 1 200px; /* Alinhamento flex com tamanho de 200 */
+  margin: 10px; /* Margin de pixel em cada lado */
+  background: #d3d6db;
+}
+
+.flex p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
